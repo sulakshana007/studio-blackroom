@@ -1,0 +1,334 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="title_style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <title>Studio BlackRoom</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <video autoplay loop muted plays-inline class="back-video" >
+        <source src="videos/background-video.mp4"type="video/mp4">
+    </video>
+
+
+
+
+
+    <header>
+        <div class="logo float-left">
+
+         <img src="photos/studio_logo.png "  alt="studioLogo" style="width:350px;height:200px; margin-left: 2%;">
+
+        </div>
+
+        <div class="nav-icon float-right">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+    </header>
+
+    <div class="full-menu">
+
+        <div class="fullmenu-content">
+            <ul class="page-menu">
+             <li><a href="" class="active">HOME</a></li>
+             <li><a href="">ABOUT US</a></li>
+             <li><a href="">GALLERY</a></li>
+             <li><a href="">OUR TEAM</a></li>
+             <li><a href="">PACKAGES</a></li>
+             <li><a href="">GALLERY</a></li>
+             <li><a href="">CONTACT US</a></li>
+             <li class="social">
+				<a href="#"><img src="icons/social/twitter.svg" alt=""></a>
+				<a href="#"><img src="icons/social/dribbble.svg" alt=""></a>
+				<a href="#"><img src="icons/social/instagram.svg" alt=""></a>
+				<a href="#"><img src="icons/social/send.svg" alt=""></a>
+			</li>
+            </ul>
+        </div>
+        <a href="" class="modal-close"></a>
+    </div>
+
+    <div class="cd-transition-layer visible opening">
+        <div class="bg-layer"></div>
+    </div>
+
+
+
+
+    <div class="wrapper">
+    <div class="heading">
+
+        <div class="h1_stud">
+   <h1>
+       <span>S</span>
+       <span>t</span>
+       <span>u</span>
+       <span>d</span>
+       <span>i</span>
+       <span>o</span> 
+        <span> </span>
+        <span> </span>
+        <span> </span>
+       <span>B</span>
+       <span>l</span>
+       <span>a</span>
+       <span>c</span>
+       <span>k</span>
+       <span> </span>
+       <span> </span>
+       <span> </span>
+       <span>R</span>
+       <span>o</span>
+       <span>o</span>
+       <span>m</span>
+   </h1>
+
+</div>
+   <div class="button">
+       <button>EXPLORE</button>
+   </div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="jquery-2.1.4.min.js"></script>
+
+ <script>
+ 'use strict';
+
+$(document).ready( function() {
+
+
+
+    var width = 100,
+        perfData = window.performance.timing,
+        EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+        time = ((EstimatedTime/1000)%50) * 100
+
+
+    // Percentage Increment Animation
+    var PercentageID = $(".percentage"),
+            start = 0,
+            end = 100,
+            durataion = time;
+            animateValue(PercentageID, start, end, durataion);
+
+    function animateValue(id, start, end, duration) {
+
+        var range = end - start,
+          current = start,
+          increment = end > start? 1 : -1,
+          stepTime = Math.abs(Math.floor(duration / range)),
+          obj = $(id);
+
+
+        var timer = setInterval(function() {
+            current += increment;
+            $(obj).text(current);
+          //obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+
+
+	setTimeout(function(){
+        $('.preloader').fadeOut();
+
+        $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
+            $(this).removeClass("visible closing opening").dequeue();
+        });
+
+	}, time);
+
+
+
+
+   // FADE OUT EFFECT WHEN CLICK A LINK
+    $(document).on("click", "a:not(.lightbox)", function () {
+        var newUrl = $(this).attr("href");
+        if (!newUrl || newUrl[0] === "#") {
+            location.hash = newUrl;
+            return;
+        }
+        $("html").fadeOut(function () {
+            location = newUrl;
+        });
+        return false;
+    });
+
+
+    var paget = $(".page-title .title").text();
+
+    $( ".page-title").append("<span></span>");
+    $( ".page-title span").append(paget);
+
+
+
+    //posts page hover
+    $('.blog-post .blog-link').hover(function(){
+        $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
+        $(this).parent('.blog-post').toggleClass('mousef');
+    });
+
+});
+
+
+
+
+$(window).load( function() {
+
+
+function smokeeffect () {
+    var modalTrigger = $('.nav-icon'),
+        transitionLayer = $('.cd-transition-layer'),
+        transitionBackground = transitionLayer.children(),
+        modalWindow = $('.full-menu');
+
+    var frameProportion = 1.78, //png frame aspect ratio
+        frames = 25, //number of png frames
+        resize = false;
+
+    //set transitionBackground dimentions
+    setLayerDimensions();
+    $(window).on('resize', function(){
+        if( !resize ) {
+            resize = true;
+            (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions);
+        }
+    });
+
+    //open modal window
+    modalTrigger.on('click', function(event){
+        event.preventDefault();
+        transitionLayer.addClass('visible opening');
+        var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
+        setTimeout(function(){
+            modalWindow.addClass('visible');
+        }, delay);
+    });
+
+    //close modal window
+    modalWindow.on('click', '.modal-close', function(event){
+        event.preventDefault();
+        transitionLayer.addClass('closing');
+        modalWindow.removeClass('visible');
+        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+            transitionLayer.removeClass('closing opening visible');
+            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        });
+    });
+
+    function setLayerDimensions() {
+        var windowWidth = $(window).width(),
+            windowHeight = $(window).height(),
+            layerHeight, layerWidth;
+
+        if( windowWidth/windowHeight > frameProportion ) {
+            layerWidth = windowWidth;
+            layerHeight = layerWidth/frameProportion;
+        } else {
+            layerHeight = windowHeight*1.2;
+            layerWidth = layerHeight*frameProportion;
+        }
+
+        transitionBackground.css({
+            'width': layerWidth*frames+'px',
+            'height': layerHeight+'px',
+        });
+
+        resize = false;
+    }
+
+}
+smokeeffect()
+
+
+
+/*--------------------------------------------------
+ Hero Section Height
+---------------------------------------------------*/
+     function homeh() {
+        var hometext = $('.main')
+
+        hometext.css({
+            "height": $(window).height() + "px"
+        });
+    }
+    homeh();
+    $(window).resize(homeh);
+
+
+    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
+
+    $('.nav-icon').on("click", function(){
+            $(this).toggleClass('modal-close');
+    });
+
+
+
+}); // document load end
+
+
+
+
+
+</script>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

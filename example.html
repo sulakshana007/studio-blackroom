@@ -1,0 +1,487 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="example.css">
+	
+    
+
+</head>
+<body>
+  <button class="nav-toggle" data-menustate="closed">
+    <svg class="icon icon--menu" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </svg>
+    <svg class="icon icon--close" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      <path d="M0 0h24v24H0z" fill="none"/>
+    </svg>
+  </button>
+  <nav class="nav" data-state="closed">
+    <a href="#" style="--delay: .35s">About</a>
+    <a href="#" style="--delay: .4s">Studio</a>
+    <a href="#" style="--delay: .45s">Products</a>
+    <a href="#" style="--delay: .5s">Contact</a>
+  </nav>
+  <header class="header" data-menustate="closed">
+    <div class="grid-item  grid-item--primary">
+      <img src="https://images.unsplash.com/photo-1485277531869-f71504d462e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a0444526f6da20a3492a305b19846e&auto=format&fit=crop&w=1350&q=80" class="object-fit" alt="chair">
+      <a href="#" class="logo">
+        <h1>Kram</h1>
+      </a>
+    </div>
+    <div class="grid-item grid-item--secondary  grid-item--content">
+      <article class="article  article--align-right">
+        <h5 class="rotate rotate--right">Made in<br/>Sweden</h5>
+      </article>
+      <article class="article">
+        <h4><span>1992</span> <span>2018</span></h4>
+        <h2>Our Studio</h2>
+        <p>Within the different collections of various creative fields and directions from furniture.</p>
+      </article>
+    </div>
+    <div class="grid-item grid-item--secondary">
+      <img src="https://images.unsplash.com/photo-1496154077138-22d8a3b92e8b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c2d9a83fdebee2ca48e816da35de74f&auto=format&fit=crop&w=1350&q=80" class="object-fit" alt="chair">
+    </div>
+    <div class="grid-item grid-item--tertiary">
+      <img src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9429bb5eda4dd7617a61f11f159bc0f2&auto=format&fit=crop&w=1349&q=80" class="object-fit" alt="chair">
+    </div>
+    <div class="grid-item grid-item--tertiary grid-item--content">
+      <article class="article">
+        <p>Be the first to recieve our latest publication <a href="#">Subscribe</a></p>
+      </article>
+    </div>
+    <div class="grid-item grid-item--tertiary">
+      <img src="https://images.unsplash.com/photo-1417976528056-3c9bbbb5456c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72f2b73c3e8892ff6a59e247557f3b47&auto=format&fit=crop&w=1350&q=80" class="object-fit" alt="chair">
+    </div>
+  </header>
+  
+  <div class="loading-overlay">
+    <span class="loading-overlay__content h1">Kram</span>
+  </div>
+  
+  <section class="dark">
+    <div class="container py-4">
+      <h1 class="h1 text-center" id="pageHeaderTitle">My Cards Dark</h1>
+  
+      <article class="postcard dark blue">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play blue">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard dark red">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />	
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play red">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard dark green">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play green">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard dark yellow">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title yellow"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play yellow">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <section class="light">
+    <div class="container py-2">
+      <div class="h1 text-center text-dark" id="pageHeaderTitle">My Cards Light</div>
+  
+      <article class="postcard light blue">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play blue">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard light red">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />	
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play red">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard light green">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/500/501" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play green">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard light yellow">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="https://picsum.photos/501/501" alt="Image Title" />
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title yellow"><a href="#">Podcast Title</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+            <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+            <li class="tag__item play yellow">
+              <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- <div id="smart-button-container">
+    <div style="text-align: center;">
+      <div id="paypal-button-container"></div>
+    </div>
+  </div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+  function initPayPalButton() {
+    paypal.Buttons({
+      style: {
+        shape: 'pill',
+        color: 'blue',
+        layout: 'vertical',
+        label: 'pay',
+        
+      },
+
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{"description":"Blah Blah Blah","amount":{"currency_code":"USD","value":12}}]
+        });
+      },
+
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(orderData) {
+          
+          // Full available details
+          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+          // Show a success message within this page, e.g.
+          const element = document.getElementById('paypal-button-container');
+          element.innerHTML = '';
+          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+          // Or go to another URL:  actions.redirect('thank_you.html');
+          
+        });
+      },
+
+      onError: function(err) {
+        console.log(err);
+      }
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+</script> -->
+
+
+<p>aefioajubcoaucbaocueabcoaeucbaoeaubojubaojbojujbojubo</p>
+
+<!-- 
+<div id="smart-button-container">
+    <div style="text-align: center"><label for="description">Your Name </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+      <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+    <div style="text-align: center"><label for="amount">Amount </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
+      <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+    <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+      <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+    <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+  </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+  function initPayPalButton() {
+    var description = document.querySelector('#smart-button-container #description');
+    var amount = document.querySelector('#smart-button-container #amount');
+    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+    var priceError = document.querySelector('#smart-button-container #priceLabelError');
+    var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+    var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+    var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+
+    var elArr = [description, amount];
+
+    if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+      invoiceidDiv.style.display = "block";
+    }
+
+    var purchase_units = [];
+    purchase_units[0] = {};
+    purchase_units[0].amount = {};
+
+    function validate(event) {
+      return event.value.length > 0;
+    }
+
+    paypal.Buttons({
+      style: {
+        color: 'blue',
+        shape: 'pill',
+        label: 'pay',
+        layout: 'vertical',
+        
+      },
+
+      onInit: function (data, actions) {
+        actions.disable();
+
+        if(invoiceidDiv.style.display === "block") {
+          elArr.push(invoiceid);
+        }
+
+        elArr.forEach(function (item) {
+          item.addEventListener('keyup', function (event) {
+            var result = elArr.every(validate);
+            if (result) {
+              actions.enable();
+            } else {
+              actions.disable();
+            }
+          });
+        });
+      },
+
+      onClick: function () {
+        if (description.value.length < 1) {
+          descriptionError.style.visibility = "visible";
+        } else {
+          descriptionError.style.visibility = "hidden";
+        }
+
+        if (amount.value.length < 1) {
+          priceError.style.visibility = "visible";
+        } else {
+          priceError.style.visibility = "hidden";
+        }
+
+        if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+          invoiceidError.style.visibility = "visible";
+        } else {
+          invoiceidError.style.visibility = "hidden";
+        }
+
+        purchase_units[0].description = description.value;
+        purchase_units[0].amount.value = amount.value;
+
+        if(invoiceid.value !== '') {
+          purchase_units[0].invoice_id = invoiceid.value;
+        }
+      },
+
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: purchase_units,
+        });
+      },
+
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (orderData) {
+
+          // Full available details
+          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+
+// Show a success message within this page, e.g.
+          const element = document.getElementById('paypal-button-container');
+          element.innerHTML = '';
+          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+          // Or go to another URL:  actions.redirect('thank_you.html');
+          
+        });
+      },
+
+      onError: function (err) {
+        console.log(err);
+      }
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+  </script>
+ -->
+ <div id="smart-button-container">
+  <div style="text-align: center;">
+    <div id="paypal-button-container"></div>
+  </div>
+</div>
+
+<button class="custom-btn btn-16">Read More</button>
+
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+
+
+<script>
+function initPayPalButton() {
+  paypal.Buttons({
+    style: {
+      shape: 'rect',
+      color: 'gold',
+      layout: 'vertical',
+      label: 'paypal',
+
+    },
+
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{"description":"Subscribe to my onlyfans!","amount":{"currency_code":"USD","value":1}}]
+      });
+    },
+
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(orderData) {
+
+        // Full available details
+        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+        // Show a success message within this page, e.g.
+        const element = document.getElementById('paypal-button-container');
+        element.innerHTML = '';
+        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+        // Or go to another URL:  actions.redirect('thank_you.html');
+
+      });
+    },
+
+    onError: function(err) {
+      console.log(err);
+    }
+  }).render('#paypal-button-container');
+}
+initPayPalButton();
+</script>
+
+
+
+
+<script src="example.js"></script>
+
+</body>
+</html>
