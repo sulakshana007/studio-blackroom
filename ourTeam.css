@@ -20,7 +20,7 @@
     overflow: hidden;
     align-items: center;
     background-image: url("photos/cover4.jpg");
-    background-size: cover;
+/*     background-size: cover; */
     background-position: center;
     font-family: "Rajdhani", sans-serif;
     
