@@ -962,7 +962,7 @@ border-radius:.5em;
   font-size: 250%;
 }
 
-@media (min-width: 840px) {
+@media (max-width: 840px) {
   .contactCard{
     width: 150px;
     
