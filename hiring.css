@@ -917,7 +917,7 @@ contact */
   width: 180px;
   background-color: white;
   border-radius:1em;
-  padding: 2em;
+  padding: 3em;
   text-align: center;
 
   transition: transform 500ms ease-in;
