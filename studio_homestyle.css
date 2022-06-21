@@ -97,12 +97,16 @@
   
   .head-large {
     margin-bottom: 5vw;
-    font-size: 10vw;
+    font-size: 7vw;
     line-height: 1.2em;
     font-family: "Inknut Antiqua", serif;
     color: white;
   }
   
+
+
+
+
   .head-small {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
@@ -115,10 +119,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+
+
   .head-centered {
     text-align: center;
   }
   
+
+
+
   .copy {
     display: block;
     max-width: 500px;
@@ -133,15 +142,21 @@
     text-align: center;
   }
   
+
+
   .copy-white {
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
+
+
   .item-parallax-media {
     overflow: scroll;
   }
+
+
   .item-parallax-media img {
     position: absolute;
     top: -10%;
@@ -163,7 +178,27 @@
     z-index: 3;
     transform: translateY(-13vw);
   }
+
+
+  @media only screen and (max-width:1000px) {
+    .section-end:before{
+      height: 1000%;
+    }
+    
+    .head-large{
+      font-size: 3.5em;
+    }
+    
+  }
   
+  @media only screen and (max-width:480px) {
+    .team_btn{
+      margin-left: 25%;
+    }
+  }
+
+
+
   .section-landing .item-parallax-media {
     opacity: calc( 1 - (var(--y) * 0.0009) );
   }
@@ -246,7 +281,7 @@
     bottom: 50%;
     left: 24%;
     width: 10px;
-    height: 80%;
+    height: 60%;
     background-color: white;
     z-index: 3;
     transform: translateY(8vw);
@@ -317,7 +352,7 @@
       letter-spacing: 2px;
       font-size: 26px;
       transition: 0.5s;
-      margin-left: 28%;
+      margin-left: 30%;
       margin-top: 2%;
   }
 
