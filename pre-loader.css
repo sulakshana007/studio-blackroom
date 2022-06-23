@@ -1,0 +1,68 @@
+body {
+    overflow: hidden;
+  }
+  
+  
+  body.loaded {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .loading {
+    background: rgba(16, 17, 24, 1);
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1001;
+  }
+  
+  .svg-wrapper {
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+  }
+  
+  .animate {
+    fill: transparent;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 600;
+    stroke-width: 1px;
+    stroke: #fdad59;
+  }
+  
+  .text {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: -110px;
+  }
+  
+  .logo {
+    display: block;
+    letter-spacing: 10px;
+    font-size: 22px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    font-family: 'Cinzel';
+  }
+  
+  .motto {
+    display: block;
+    padding-top: 10px;
+    font-family: 'Cinzel';
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+  
