@@ -374,7 +374,7 @@ img {
   wall1 painting,
   wall2 painting,
   wall3 painting {
-    width: 120rem;
+    /* width: 120rem;
     height: 156rem;
     border: 2rem solid #d9996b;
     border-top-color: #221309;
@@ -384,7 +384,21 @@ img {
     background: #110e12;
     box-shadow: 0 5rem 2rem -2rem rgba(17, 14, 18, 0.5), inset 0 0 10rem #000;
     border-radius: 2rem;
+    padding: 1rem; */
+
+
+    width: 120rem;
+    height: 156rem;
+    /* border: 2rem solid #d9996b; */
+    border-top-color: #221309;
+    border-left-color: #361f0e;
+    border-right-color: #4a2b13;
+    transform: rotateY(-90deg) translate3d(0, -17rem, -89rem);
+    background: #110e12;
+    box-shadow: 0 5rem 2rem -2rem rgba(17, 14, 18, 0.5), inset 0 0 10rem #000;
+    border-radius: 2rem;
     padding: 1rem;
+
   }
   wall1 painting p,
   wall2 painting p,
@@ -430,12 +444,17 @@ img {
   }
   
   wall2 painting {
+    
     width: 200rem;
     height: 126rem;
-    transform: translate3d(-100rem, 0, 148rem) scaleX(-1);
+    /*transform: translate3d(-100rem, 0, 148rem) scaleX(-1);*/
+    transform: translate3d(-100rem, 0, 148rem) scaleX(-1.2);
+    /* background: radial-gradient(circle at 60% 80%, rgba(7, 7, 7, 0), rgba(7, 7, 7, 0.5)), linear-gradient(to right, rgba(11, 11, 11, 0.5), rgba(0, 0, 0, 0), rgba(11, 11, 11, 0), rgba(1, 1, 1, 0.5)); */
+
   }
   
   wall3 painting {
+    padding-right:10%;
     width: 110rem;
     height: 144rem;
     transform: rotateY(90deg) translate3d(0, -17rem, -200rem);
@@ -443,7 +462,9 @@ img {
   
   wall4 {
     transform: translate3d(-150rem, -50rem, -150rem);
-    background: radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0), rgba(17, 14, 18, 0.5)), linear-gradient(to right, rgba(17, 14, 18, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(17, 14, 18, 0.5));
+    /* background: radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0), rgba(17, 14, 18, 0.5)), linear-gradient(to right, rgba(17, 14, 18, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(17, 14, 18, 0.5)); */
+    background: radial-gradient(circle at 60% 80%, rgba(7, 7, 7, 0), rgba(7, 7, 7, 0.5)), linear-gradient(to right, rgba(15, 14, 15, 0.5), rgba(85, 84, 84, 0), rgba(132, 132, 132, 0), rgba(15, 13, 15, 0.5));
+
     box-shadow: 0 0 1rem #110e12;
     width: 300rem;
     height: 250rem;
@@ -567,7 +588,8 @@ img {
     text-decoration: none;
     margin-bottom: 3rem;
     color: #000;
-    box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.5), 0 0 0 2rem rgba(255, 255, 255, 0), -0.5rem 1rem 2rem rgba(17, 14, 18, 0.5);
+    /* box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.5), 0 0 0 2rem rgba(255, 255, 255, 0), -0.5rem 1rem 2rem rgba(17, 14, 18, 0.5); */
+    
     transition: all 0.25s ease-in-out;
     display: block;
     text-align: center;
