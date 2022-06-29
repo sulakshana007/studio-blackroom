@@ -174,7 +174,7 @@ section[class*=unit-] {
 
 @media (max-width: 800px) {
   .head-large {
-    font-size: 6rem;
+    font-size: 3rem;
   }
 
   .head-large:before {
