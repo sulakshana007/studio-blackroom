@@ -40,6 +40,7 @@ nav{
   .nav-links li a{
     text-decoration: none;
     margin: 0 0.7vw;
+    color: #ffffff;
   }
   .nav-links li a:hover {
     color: #61DAFB;
@@ -52,7 +53,7 @@ nav{
     display: block;
     height: 3px;
     width: 0%;
-    background-color: #61DAFB;
+    background-color: #40669c;
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;

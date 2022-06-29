@@ -2,7 +2,9 @@ body {
     overflow: hidden;
   }
   
-  
+  html{
+    background-color: black;
+  }
   body.loaded {
     overflow-y: auto;
     overflow-x: hidden;

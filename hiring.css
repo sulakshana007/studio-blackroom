@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* body {
+body {
   overflow: hidden;
 }
 
@@ -74,7 +74,7 @@ body.loaded {
   font-family: 'Cinzel';
   font-size: 9px;
   letter-spacing: 3px;
-} */
+}
 
 
 /*Desktop navigation*/
@@ -178,6 +178,7 @@ body.loaded {
     font-size: 24px;
     color: #fdad59;
   }
+  
   /* .button_container {
     position: fixed;
     width: 30px;
@@ -352,6 +353,15 @@ body.loaded {
   background-size: cover;
   transition: all 1.5s ease;
 }
+
+/* @media only screen and (max-width:1000px) {
+  .landing {
+  background-image: linear-gradient(rgba(21, 22, 29, .9), rgba(21, 22, 29, .9)), url(photos/studio2.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+} */
 
 .landing.loaded {
   transform: scale(1.0);

@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 const body = document.body;
 const content = document.querySelector(".js-content");
 const blocks = document.querySelectorAll(".block");
@@ -23,3 +30,7 @@ const updateProps = () => {
 
 updateProps();
 updateOffset();
+
+
+
+

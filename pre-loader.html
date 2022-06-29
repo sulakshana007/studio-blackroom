@@ -1,0 +1,47 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pre-loader.css">
+</head>
+<body>
+    <!--Preloader-->
+    <div class="loading">
+        <div class="svg-wrapper">
+          <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+          <rect class="animate" height="150" width="150" />
+        </svg>
+          <div class="text">
+            <span class="logo">sbr</span>
+            <span class="motto">We Love Music.</span>
+          </div>
+        </div>
+      </div>
+    
+      <!--SVG animation-->
+      <script>
+        var p = document.querySelector('.animate'),
+          offset = 600;
+        var offsetMe = function() {
+          if (offset < 0) {
+            offset = 600;
+          }
+          p.style.strokeDashoffset = offset;
+          offset = offset - 5;
+          requestAnimationFrame(offsetMe);
+        }
+        offsetMe();
+      </script>
+      <script>
+        setTimeout(function(){
+            window.location.href = 'decibles.html';
+        }, 5000);
+    </script>
+</body>
+</html>
+
+    
