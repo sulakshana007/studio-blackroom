@@ -5,19 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="studio_homestyle.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Studio BlackRoom</title>
 
+
+
+
 </head>
+
+
 <body>
 
 
 
+
+
+<nav>
+  <div class="logo">
+      <img style="width:110% ;" src="photos/studio_logo.png" alt="Logo Image">
+  </div>
+  <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+  <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#decibles">Live Band</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#packages">Gallery</a></li>
+      <li><button class="join-button" href="#smart-button-container">Pay Us</button></li>
+
+  </ul>
+</nav>
   
     <main class="content js-content">
   
-        <section class="block section-landing">
+        <section class="block section-landing" id="home">
           <figure class="item-parallax-media">
-            <img src="photos/studio3.jpg" alt="">
+            <img style="z-index: -1000000;" src="photos/studio3.jpg" alt="">
           </figure>
           <div class="item-parallax-content flex-container">
             <div class="landing-content centered-content">
@@ -25,6 +52,13 @@
             </div>
           </div>
         </section>
+
+
+       
+
+
+
+
 
         <section class="block section-intro">
           <div class="item-parallax-content flex-container">
@@ -40,7 +74,7 @@
           </div>
         </section>
         
-        <section class="block section-part">
+        <section class="block section-part" id="decibles">
           <figure class="item-parallax-media">
             <img src="photos/studio2.jpeg" alt="" >
           </figure>
@@ -67,7 +101,7 @@
             <figure class="img-gridItem type-right">
               <img src="photos/studio1.jpeg" alt="" />
               <figcaption class="img-caption">
-                <h2 class="head-small">PACKAGES</h2>
+                <h2  id="packages" id="gallery" class="head-small">PACKAGES</h2>
                 <p class="copy copy-white">
                   Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
                 </p>
@@ -79,10 +113,10 @@
 
               </figcaption>
             </figure>
-            <figure class="img-gridItem type-left">
+            <figure class="img-gridItem type-left" >
               <img src="photos/studio5.jpg" alt="" />
               <figcaption class="img-caption">
-                <h2 class="head-small">GALLERY</h2>
+                <h2  class="head-small">GALLERY</h2>
                 <p class="copy copy-white">
                   A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets.
                 </p>
@@ -96,15 +130,15 @@
           </div>
         </section>
         
-        <section class="block section-end">
+        <section class="block section-end" >
           <figure class="item-parallax-media">
             <img src="photos/studio6.jpeg" alt="" />
           </figure>
-          <div class="item-parallax-content flex-container">
-            <div class="landing-content centered-content">
-              <h1 class="head-large" style="font-size: 5vw;">PAY HERE FOR YOUR CUSTOMIZED PROJECT</h1>
+          <div class="item-parallax-content flex-container" id="">
+            <div  class="landing-content centered-content">
+              <h1  class="head-large" style="font-size: 5vw;">PAY HERE FOR YOUR CUSTOMIZED PROJECT</h1>
              
-<div id="smart-button-container">
+<div id="smart-button-container" >
     <div style="text-align: center; color:#fff;" ><label for="description">Your Name </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
       <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
     <div style="text-align: center; color:#fff;"><label for="amount">Amount </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
@@ -226,12 +260,72 @@
             </div>
           </div>
         </section>
-        
-        <section class="custom-properties-ftw">
-          <h3 class="head-small head-centered">Yeah Custom Properties</h3>
+
+   
+          <footer>
+            <div class="row">
+            
+            
+              <div class='col'>
+                <img src="images/logo.png" class="foot_logo" alt="logo">
+                <p>We are the leading tourism organizing company in Sri Lanka.
+                You can have a luxurious and affordable tour packages from Lassana Lanka.</p>
+              </div>
+              
+              
+              <div class='col'>
+                <h3>Office <div class="underline"><span></span></div></h3>
+                <p>35/1,</p> 
+                <p>Edirigoda Rd,</p>
+                <p> Nugegoda, </p>
+                <p>Sri Lanka</p>
+                <p class="email-id">LassanaLanka@gmail.com</P>
+                <h4>+94 1132 47392 </h4>
+              </div>
+              
+              
+              <div class='col'>
+                <h3>Links <div class="underline"><span></span></div></h3>
+                <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Packages</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">SIte Map</a></li>
+                </ul>
+              </div>
+              
+              
+              <div class='col'>
+                <h3>NewsLetter <div class="underline"><span></span></div></h3>
+                <form>
+                
+                    <img src="photos/email.png" class="email-img ">
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><img src="photos/next.png" class="email-img arrow"></button>
+                </form>
+                
+                <div class="social-icons">
+                  <img src="photos/facebook.png" class="social_img ">
+                  <img src="photos/instagram.png" class="social_img ">
+                  <img src="photos/linkedin.png" class="social_img ">
+                  <img src="photos/twitter.png" class="social_img">
+                </div>
+                
+                
+              </div>
+              
+              
+              
+            </div>
+            <hr>
+            <p class="copyright">Lassana Lanka &copy; - All Rights Reserved</p>
+          </footer>
         </section>
       </main>
 
       <script src="studio_homejava.js"></script> 
+      <script src="navbar.js"></script> 
 </body>
 </html>
